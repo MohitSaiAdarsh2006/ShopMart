@@ -1,0 +1,1 @@
+ShopMart is an intelligent e-commerce platform designed to make your shopping experience smarter, faster, and more enjoyable. Whether you’re looking for the perfect product, need recommendations, or want to compare options, ShopMart has you covered.
