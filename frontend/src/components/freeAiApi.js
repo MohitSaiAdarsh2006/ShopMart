@@ -1,9 +1,4 @@
-// Simple free AI API wrapper using Hugging Face Inference API (text-generation)
-// You can use this as a proxy for demo/free use. For production, consider your own backend for key security.
-// This uses the Hugging Face 'bigscience/bloomz-560m' model which is free for low-traffic/demo.
 
-// Reads OpenRouter API key from openrouter.key and calls DeepSeek via OpenRouter API.
-// Place your OpenRouter API key in 'openrouter.key' (never commit this file).
 
 export async function fetchFreeAIResponse(prompt) {
   let apiKey;
