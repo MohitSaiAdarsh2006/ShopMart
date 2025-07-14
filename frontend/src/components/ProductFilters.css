@@ -1,0 +1,276 @@
+.product-filters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-filters-header {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+.product-filters-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.product-filters-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #374151;
+  transition: color 0.2s;
+}
+
+.product-filters-toggle-btn:hover {
+  color: #2563eb;
+}
+
+.product-filters-icon-sm {
+  width: 20px;
+  height: 20px;
+}
+
+.product-filters-toggle-text {
+  font-weight: 500;
+}
+
+.product-filters-count {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 9999px;
+}
+
+.product-filters-sort-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-filters-sort-label {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.product-filters-sort-select {
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 4px 8px;
+  transition: all 0.2s;
+}
+
+.product-filters-sort-select:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.product-filters-header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.product-filters-health-alerts-on,
+.product-filters-health-alerts-off {
+  font-size: 14px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.product-filters-health-alerts-on {
+  background-color: #f0fdf4;
+  color: #15803d;
+}
+
+.product-filters-health-alerts-off {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
+.product-filters-view-toggle {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+
+.product-filters-view-btn,
+.product-filters-view-btn-active {
+  padding: 8px;
+}
+
+.product-filters-view-btn {
+  color: #4b5563;
+}
+
+.product-filters-view-btn-active {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.product-filters-icon-xs {
+  width: 16px;
+  height: 16px;
+}
+
+.product-filters-clear-btn {
+  font-size: 14px;
+  color: #2563eb;
+  transition: color 0.2s;
+}
+
+.product-filters-clear-btn:hover {
+  color: #1d4ed8;
+}
+
+.product-filters-active {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.product-filters-active-tag,
+.product-filters-active-brand-tag,
+.product-filters-active-health-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+}
+
+.product-filters-active-tag {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.product-filters-active-brand-tag {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.product-filters-active-health-tag {
+  background-color: #f0fdf4;
+  color: #15803d;
+}
+
+.product-filters-remove-tag-btn,
+.product-filters-remove-brand-tag-btn,
+.product-filters-remove-health-tag-btn {
+  margin-left: 8px;
+  transition: color 0.2s;
+}
+
+.product-filters-remove-tag-btn {
+  color: #2563eb;
+}
+
+.product-filters-remove-tag-btn:hover {
+  color: #1d4ed8;
+}
+
+.product-filters-remove-brand-tag-btn {
+  color: #4b5563;
+}
+
+.product-filters-remove-brand-tag-btn:hover {
+  color: #1f2937;
+}
+
+.product-filters-remove-health-tag-btn {
+  color: #16a34a;
+}
+
+.product-filters-remove-health-tag-btn:hover {
+  color: #15803d;
+}
+
+.product-filters-icon-tiny {
+  width: 12px;
+  height: 12px;
+}
+
+.product-filters-details {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.product-filters-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-filters-section-title {
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.product-filters-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-filters-option-label {
+  display: flex;
+  align-items: center;
+}
+
+.product-filters-radio,
+.product-filters-checkbox {
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  color: #2563eb;
+}
+
+.product-filters-radio:focus,
+.product-filters-checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.product-filters-option-text {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.product-filters-price-range {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.product-filters-price-input {
+  width: 96px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.product-filters-price-separator {
+  color: #374151;
+}
+
+.product-filters-brands {
+  max-height: 160px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

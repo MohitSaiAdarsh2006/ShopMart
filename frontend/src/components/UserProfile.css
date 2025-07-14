@@ -1,0 +1,325 @@
+.user-profile-container {
+  max-width: 896px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.user-profile-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.user-profile-header {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 24px;
+}
+
+.user-profile-header-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-profile-avatar-container {
+  width: 64px;
+  height: 64px;
+  background-color: #3b82f6;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-profile-avatar-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.user-profile-name {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.user-profile-email {
+  color: #bfdbfe;
+}
+
+.user-profile-header-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.user-profile-edit-btn,
+.user-profile-cancel-btn {
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.user-profile-edit-btn {
+  background-color: #3b82f6;
+}
+
+.user-profile-edit-btn:hover {
+  background-color: #60a5fa;
+}
+
+.user-profile-cancel-btn {
+  background-color: #6b7280;
+}
+
+.user-profile-cancel-btn:hover {
+  background-color: #4b5563;
+}
+
+.user-profile-icon-sm {
+  width: 20px;
+  height: 20px;
+}
+
+.user-profile-content {
+  padding: 24px;
+}
+
+.user-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.user-profile-form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .user-profile-form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.user-profile-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.user-profile-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.user-profile-input:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.user-profile-section-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.user-profile-checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .user-profile-checkbox-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.user-profile-checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile-checkbox {
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  color: #2563eb;
+}
+
+.user-profile-checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.user-profile-checkbox-text {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.user-profile-form-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.user-profile-submit-btn,
+.user-profile-cancel-form-btn,
+.user-profile-logout-btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.user-profile-submit-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.user-profile-submit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.user-profile-icon-xs {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.user-profile-cancel-form-btn {
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.user-profile-cancel-form-btn:hover {
+  background-color: #f9fafb;
+}
+
+.user-profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.user-profile-info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .user-profile-info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.user-profile-info-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.user-profile-info-text {
+  color: #111827;
+}
+
+.user-profile-health-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .user-profile-health-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.user-profile-health-item,
+.user-profile-health-item-diabetic,
+.user-profile-health-item-nut-allergic,
+.user-profile-health-item-low-sodium,
+.user-profile-health-item-vegan,
+.user-profile-health-item-gluten-free {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.user-profile-health-item {
+  background-color: #f3f4f6;
+  color: #6b7280;
+}
+
+.user-profile-health-item-diabetic,
+.user-profile-health-item-nut-allergic {
+  background-color: #fef2f2;
+  color: #b91c1c;
+}
+
+.user-profile-health-item-low-sodium {
+  background-color: #fefce8;
+  color: #92400e;
+}
+
+.user-profile-health-item-vegan {
+  background-color: #f0fdf4;
+  color: #15803d;
+}
+
+.user-profile-health-item-gluten-free {
+  background-color: #eff6ff;
+  color: #1e40af;
+}
+
+.user-profile-actions {
+  padding-top: 24px;
+  border-top: 1px solid #d1d5db;
+}
+
+.user-profile-logout-btn {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.user-profile-logout-btn:hover {
+  background-color: #b91c1c;
+}
+
+.user-profile-icon {
+  width: 96px;
+  height: 96px;
+  color: #d1d5db;
+  margin: 0 auto 16px;
+}
+
+.user-profile-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.user-profile-text {
+  color: #4b5563;
+  margin-bottom: 32px;
+}
+
+.user-profile-signin-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.user-profile-signin-btn:hover {
+  background-color: #1d4ed8;
+}

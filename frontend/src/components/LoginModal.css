@@ -1,0 +1,291 @@
+/* LoginModal.css */
+
+.login-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 1rem;
+}
+
+.login-modal-container {
+  background-color: white;
+  border-radius: 0.5rem;
+  max-width: 28rem;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.login-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.login-modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.login-modal-close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9ca3af;
+  transition: color 0.2s ease;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.login-modal-close-btn:hover {
+  color: #4b5563;
+}
+
+.login-modal-close-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.login-modal-form {
+  padding: 1.5rem;
+}
+
+.login-modal-field {
+  margin-bottom: 1rem;
+}
+
+.login-modal-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.login-modal-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.login-modal-input:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.login-modal-password-container {
+  position: relative;
+}
+
+.login-modal-password-input {
+  width: 100%;
+  padding: 0.75rem;
+  padding-right: 2.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.login-modal-password-input:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.login-modal-password-toggle {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9ca3af;
+  transition: color 0.2s ease;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.login-modal-password-toggle:hover {
+  color: #4b5563;
+}
+
+.login-modal-eye-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.login-modal-health-section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.login-modal-health-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #111827;
+  margin: 0 0 0.5rem 0;
+}
+
+.login-modal-health-description {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin: 0 0 1rem 0;
+}
+
+.login-modal-health-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.login-modal-checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login-modal-checkbox {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  color: #3b82f6;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.login-modal-checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.login-modal-checkbox-text {
+  font-size: 0.875rem;
+  color: #374151;
+  user-select: none;
+}
+
+.login-modal-submit-btn {
+  width: 100%;
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 1rem;
+}
+
+.login-modal-submit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.login-modal-toggle-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.login-modal-toggle-btn {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.login-modal-toggle-btn:hover {
+  color: #1d4ed8;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .login-modal-overlay {
+    padding: 0.5rem;
+  }
+  
+  .login-modal-container {
+    max-width: 100%;
+    max-height: 95vh;
+  }
+  
+  .login-modal-header {
+    padding: 1rem;
+  }
+  
+  .login-modal-form {
+    padding: 1rem;
+  }
+  
+  .login-modal-title {
+    font-size: 1.25rem;
+  }
+}
+
+/* Accessibility improvements */
+.login-modal-checkbox:checked {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.login-modal-input:invalid {
+  border-color: #ef4444;
+}
+
+.login-modal-password-input:invalid {
+  border-color: #ef4444;
+}
+
+/* Animation for smooth transitions */
+.login-modal-overlay {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.login-modal-container {
+  animation: slideIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

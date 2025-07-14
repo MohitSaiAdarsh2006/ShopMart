@@ -1,0 +1,426 @@
+/* ProductDetailPage.css */
+
+/* Not Found Container */
+.product-detail-not-found-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.product-detail-not-found-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.product-detail-back-link {
+  color: #2563eb;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.product-detail-back-link:hover {
+  color: #1d4ed8;
+}
+
+/* Main Container */
+.product-detail-main-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Back Button */
+.product-detail-back-button {
+  display: flex;
+  align-items: center;
+  color: #2563eb;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.product-detail-back-button:hover {
+  color: #1d4ed8;
+}
+
+.product-detail-back-icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+/* Content Grid */
+.product-detail-content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .product-detail-content-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Image Section */
+.product-detail-image-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.product-detail-image-container {
+  position: relative;
+}
+
+.product-detail-image {
+  width: 100%;
+  height: 24rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail-discount-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #ef4444;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.product-detail-out-of-stock-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 24, 39, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.product-detail-out-of-stock-text {
+  color: white;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+/* Info Section */
+.product-detail-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Health Warnings */
+.product-detail-warnings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-detail-warning-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 0.5rem;
+}
+
+.product-detail-warning-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  color: #ef4444;
+  margin-top: 0.125rem;
+  flex-shrink: 0;
+}
+
+.product-detail-warning-text {
+  font-size: 0.875rem;
+  color: #b91c1c;
+  font-weight: 500;
+}
+
+/* Main Info */
+.product-detail-main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.product-detail-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.product-detail-description {
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.product-detail-rating-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-detail-rating-stars {
+  display: flex;
+  align-items: center;
+}
+
+.product-detail-stars {
+  display: flex;
+  align-items: center;
+}
+
+.product-detail-star {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.product-detail-star-filled {
+  color: #fbbf24;
+  fill: currentColor;
+}
+
+.product-detail-star-empty {
+  color: #d1d5db;
+}
+
+.product-detail-rating-text {
+  margin-left: 0.5rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.product-detail-price-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-detail-current-price {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.product-detail-original-price {
+  font-size: 1.25rem;
+  color: #6b7280;
+  text-decoration: line-through;
+}
+
+/* Actions */
+.product-detail-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.product-detail-add-to-cart {
+  flex: 1;
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.product-detail-add-to-cart:hover {
+  background-color: #1d4ed8;
+}
+
+.product-detail-add-to-cart-disabled {
+  background-color: #d1d5db;
+  cursor: not-allowed;
+}
+
+.product-detail-add-to-cart-disabled:hover {
+  background-color: #d1d5db;
+}
+
+.product-detail-cart-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.product-detail-action-button {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.product-detail-action-button:hover {
+  background-color: #f9fafb;
+}
+
+.product-detail-action-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+/* Additional Info */
+.product-detail-additional-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.product-detail-info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.product-detail-info-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+.product-detail-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.product-detail-info-item {
+  display: flex;
+  align-items: center;
+}
+
+.product-detail-info-label {
+  color: #6b7280;
+}
+
+.product-detail-info-value {
+  margin-left: 0.5rem;
+  color: #111827;
+}
+
+.product-detail-capitalize {
+  text-transform: capitalize;
+}
+
+/* Nutrition Info */
+.product-detail-nutrition-container {
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.product-detail-nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.product-detail-nutrition-item {
+  display: flex;
+  align-items: center;
+}
+
+.product-detail-nutrition-label {
+  color: #6b7280;
+}
+
+.product-detail-nutrition-value {
+  margin-left: 0.5rem;
+  color: #111827;
+}
+
+/* Ingredients */
+.product-detail-ingredients-text {
+  font-size: 0.875rem;
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* Tags */
+.product-detail-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.product-detail-tag {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1e40af;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  text-transform: capitalize;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-detail-main-container {
+    padding: 0 0.5rem;
+  }
+  
+  .product-detail-content-grid {
+    gap: 1.5rem;
+  }
+  
+  .product-detail-image {
+    height: 20rem;
+  }
+  
+  .product-detail-title {
+    font-size: 1.5rem;
+  }
+  
+  .product-detail-current-price {
+    font-size: 1.5rem;
+  }
+  
+  .product-detail-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .product-detail-action-button {
+    width: 100%;
+  }
+  
+  .product-detail-info-grid,
+  .product-detail-nutrition-grid {
+    grid-template-columns: 1fr;
+  }
+}

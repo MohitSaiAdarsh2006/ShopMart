@@ -1,0 +1,172 @@
+/* AiImageModal styles */
+.ai-image-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.ai-image-modal-window {
+  background: #fff;
+  border-radius: 16px;
+  max-width: 430px;
+  width: 94vw;
+  padding: 2.25rem 2rem 2rem 2rem;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  animation: fadeIn 0.2s;
+}
+
+.ai-image-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #374151;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.ai-image-modal-close:hover {
+  color: #2563eb;
+}
+
+.ai-image-modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+/* --- ImageUpload UI --- */
+.ai-upload-card {
+  background: #f8fafc;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.07);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.ai-upload-dropzone {
+  background: #f1f5f9;
+  border: 2px dashed #2563eb;
+  border-radius: 12px;
+  width: 100%;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  outline: none;
+  margin-bottom: 0.5rem;
+  position: relative;
+  user-select: none;
+}
+.ai-upload-dropzone:focus,
+.ai-upload-dropzone:hover {
+  border-color: #1d4ed8;
+  background: #e0e7ef;
+}
+.ai-upload-disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.ai-upload-icon {
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.ai-upload-text {
+  color: #1e293b;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  pointer-events: none;
+}
+
+.ai-upload-input {
+  display: none;
+}
+
+.ai-upload-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 600;
+  padding: 0.75rem 0;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(30,41,59,0.07);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-top: 0.25rem;
+  letter-spacing: 0.03em;
+}
+.ai-upload-btn:hover,
+.ai-upload-btn:focus {
+  background: linear-gradient(90deg, #1e40af 0%, #2563eb 100%);
+  box-shadow: 0 4px 12px rgba(37,99,235,0.12);
+}
+
+.loading {
+  color: #2563eb;
+  font-size: 1rem;
+  margin-top: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+  animation: ai-loading-blink 1s infinite alternate;
+}
+@keyframes ai-loading-blink {
+  from { opacity: 1; }
+  to { opacity: 0.5; }
+}
+.selected-file {
+  display: block;
+  margin-top: 0.75rem;
+  color: #16a34a;
+  font-weight: 500;
+  font-size: 0.98rem;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .ai-image-modal-window {
+    padding: 1.3rem 0.6rem 1.1rem 0.6rem;
+  }
+  .ai-upload-card {
+    padding: 1rem 0.25rem;
+  }
+  .ai-upload-dropzone {
+    min-height: 100px;
+  }
+  .ai-upload-btn {
+    font-size: 0.98rem;
+    padding: 0.55rem 0;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}

@@ -1,0 +1,2 @@
+# Integrated from qwer/backend/python_feature_service/requirements.txt
+flask
